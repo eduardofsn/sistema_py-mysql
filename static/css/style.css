@@ -1,0 +1,15 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.bar{
+    padding-top: 20px;
+}
+
+body{
+    max-width: 60%;
+    padding-left: 20%;
+}
+

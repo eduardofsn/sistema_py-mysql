@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block head %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <title>{% block title %} {% endblock %}</title>
+    {% endblock %}
+</head>
+<body>
+    {% block main %}
+    <div class="nav">
+        <img src="/static/img/logo.png" alt="logo">
+        <div class="bar">
+            <a href="/">HOME |</a>
+            <a href="/quemsomos">Quem somos |</a>
+            <a href="/contatos">Contatos</a>
+        </div>
+    </div>
+    {% endblock %}
+    {% block content %} {% endblock %}
+    {% block footer %}
+    <h4 align="center">Todos os direitos reservados</h4>
+    {% endblock %}
+</body>
+</html>

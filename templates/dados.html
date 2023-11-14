@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Dados armazenados:</h2>
+<table style="border: 1px solid black;">
+    <tr style="border: 1px solid black;">
+        <th style="border: 1px solid black;">Email</th>
+        <th style="border: 1px solid black;">Assunto</th>
+        <th style="border: 1px solid black;">Descrição</th>
+    </tr>
+    {% for dado in dados %}
+    <tr>
+        <td style="border: 1px solid black;">{{ dado[0] }}</td>
+        <td style="border: 1px solid black;">{{ dado[1] }}</td>
+        <td style="border: 1px solid black;">{{ dado[2] }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}
